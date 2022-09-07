@@ -48,7 +48,7 @@ struct Chest_wound_: View {
                 
                 
                 
-                Text(".There also might be:")
+            
                 
                 
                 Spacer()

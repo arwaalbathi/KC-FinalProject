@@ -10,7 +10,7 @@ import SwiftUI
 struct Manual: View {
     var body: some View {
         
-        NavigationView {
+       
             ZStack{
                 Color.green
                     .ignoresSafeArea()
@@ -24,7 +24,7 @@ struct Manual: View {
                    
                     
                     NavigationLink {
-                                        Manual()
+                                        Chest_wound_()
                                         } label: {    Text("Penetrating Chest Wound")
                                                 .foregroundColor(.black)
                                                 .bold()
@@ -81,7 +81,7 @@ struct Manual: View {
             }
         }
     }
-}
+
 
 struct Manual_Previews: PreviewProvider {
     static var previews: some View {
