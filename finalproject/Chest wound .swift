@@ -10,7 +10,7 @@ import SwiftUI
 struct Chest_wound_: View {
     var body: some View {
         ZStack{
-          
+            ScrollView{
             Color.gray
                 .ignoresSafeArea()
                 .opacity(0.6)
@@ -90,6 +90,7 @@ struct Chest_wound_: View {
                 
                     Spacer()
                 
+                    }
                 
                     Text("WHAT TO DO ?")
                 
@@ -109,8 +110,9 @@ struct Chest_wound_: View {
                 
               Spacer()
                 
-                }
+
             }.padding()
+            }
             }
         }
         }
