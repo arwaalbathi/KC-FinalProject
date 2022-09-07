@@ -10,32 +10,67 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        ZStack{
-            Color.green
-                .opacity(0.9)
-                .ignoresSafeArea()
-            
-          
-
-            VStack{
-        Text("FIRST AID")
-            .bold()
-            .foregroundColor(.black)
-                .padding()
-                Spacer()
-                Image("IMG_2758")
-                    .resizable()
-                    .scaledToFit()
-                        .padding()
-                Spacer()
+       NavigationView {
+            ZStack{
+                Color.gray
+                    .opacity(0.9)
+                    .ignoresSafeArea()
                 
-                Text("about us ")
+              
+
+                VStack{
+                    Spacer()
+                      
+            Text("FIRST AID")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    .padding()
+                    Spacer()
+                    Spacer()
+                        .padding()
+                    Image("IMG_2763-removebg-preview")
+                        .resizable()
+                        .scaledToFit()
+                        
+                            .padding()
+                            
+                    Spacer()
+                        .padding()
+
+                    HStack{
+                        
+                    
+                           
+                       
+                          
+                        NavigationLink {
+                                                information()
+                                            } label: {  Image(systemName: "info.circle.fill")
+                                                    .font(.title)
+                                                    .foregroundColor(.black)
+
+                                            }
+                        
+                        Spacer()
+                        
+                        
+                        NavigationLink {
+                                            Manual()
+                                            } label: {  Image(systemName: "arrowshape.turn.up.right.fill")
+                                                    .font(.title)
+                                                    .foregroundColor(.black)
+
+                                            }
+                        
+                   
+                    }.padding()
+                }
             }
-       
-        
+        }
         }
     }
-}
+
 
 
 
